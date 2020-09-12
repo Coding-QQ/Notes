@@ -1,5 +1,13 @@
 # CPLEX+Yalmip的MATLAB环境安装
 
+## 安装Yalmip
+
+首先说明，我的MATLAB版本为2016b。MATLAB版本与安装是否成功有着非常重要的关系。
+
+安装Yalmip比较顺利，直接下载Yalmip，拷贝进matlab根目录\toolbox下并且添加进matlab的路径里面就可以了。主要是安装cplex出现了一系列的问题。(具体可以见http://blog.sina.com.cn/s/blog_b041fdcb0102ydsq.html的**前半部分**.)
+
+**按照此博客安装CPLEX将出现一些问题，这个后面再讲**
+
 ## 第一次尝试
 
 成功安装了Yalmip，需要安装Cplex了。这次配环境主要的问题就出在cplex上面。
@@ -50,12 +58,31 @@
 
 然后我将其下载并安装，发现这是一个12.8版本的cplex。按照之前的教程安装并添加路径，就直接成功了。
 
-<img src="C:\Users\liuqq\AppData\Roaming\Typora\typora-user-images\image-20200911164834040.png" alt="image-20200911164834040" style="zoom:40%;" />
-
-似乎12.8的子文件夹内容与之前不一样，所以着实让我慌了一下，但是最后总之还是成功了。
-
 <img src="C:\Users\liuqq\AppData\Roaming\Typora\typora-user-images\image-20200911165057419.png" alt="image-20200911165057419" style="zoom:33%;" />
 
 <img src="C:\Users\liuqq\AppData\Roaming\Typora\typora-user-images\image-20200911165129412.png" alt="image-20200911165129412" style="zoom:33%;" />
 
-例程也计算成功，这里就不放截图了。
+简单的例程也计算成功，这里就不放截图了。
+
+**但是此时出现了问题：该版本为CPLEX12.8的普通版。当我运行的程序约束超过1000个时，又无法求解了**
+
+## 第四次尝试
+
+在第四次尝试中，查到了一个国外的解决方法：yalmip.github.io/cplexcrash/
+
+我再次安装了12.6版本的CPLEX，并且按照该网站的方法，将matlab根目录\toolbox\Yalmip-master\extras\sdpsettings.m中的：
+
+```matlab
+cplex=cplexoptimset('cplex');
+```
+
+改成：
+
+~~~ matlab
+cplex=cplexoptimset;
+~~~
+
+然后就完全成功了，此时运行12.6版本的CPLEX可以正常求解，不会再发生崩溃了。
+
+*我的老电脑在matlab2018b中这样做是失败的。也就是说，我目前只在2016b版本的matlab中可以成功装上cplex（通过上述的方法）*
+

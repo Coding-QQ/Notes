@@ -6,13 +6,13 @@
 
 1. 凸分析与优化
 
-   <img src="1%20Introduction.assets/image-20200914141213368.png" alt="image-20200914141213368" style="zoom:33%;" />
+   <img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200914141213368.png" alt="image-20200914141213368" style="zoom:33%;" />
 
 2. 整数规划
 
 3. 求解技术层面
 
-   <img src="1%20Introduction.assets/image-20200914141259307.png" alt="image-20200914141259307" style="zoom:33%;" />
+   <img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200914141259307.png" alt="image-20200914141259307" style="zoom:33%;" />
 
 ### 考核方式
 

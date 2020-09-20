@@ -48,7 +48,7 @@ $X_1\sim exp(\mu_1)$,$X_2\sim exp（\mu_2）$,$X=min\left\{X_1,X_2 \right\}$
 
 <img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200917110809788.png" alt="image-20200917110809788" style="zoom:40%;" />
 
-一个换电池的例子，表现了R-S积分的作用，也就是说$\int_0^\infty xf(x)dx$和$\int_0^\infty xdF(x)$是不等价的
+一个换电池的例子，表现了R-S积分的作用，也就是说$\int_0^\infty xf(x)dx$和$\int_0^\infty xdF(x)$是不等价的。因为在$y\ge1$以后，$Y=1,f(x)=0$，这个时候如果不用R-S积分就会漏算$Y=1$这个部分
 
 <img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200917110953643.png" alt="image-20200917110953643" style="zoom:40%;" />
 

@@ -50,8 +50,62 @@
    - 直线
    - 超平面
 4. 仿射包
-   - 外视角：包含S的最小仿射集
-   - 内视角：S中任意有限个元素的仿射集的全体构成的集合
+   - 外视角定义：包含S的最小仿射集
+   - 内视角定义：S中任意有限个元素的仿射集的全体构成的集合
+
+### 点集的维数、闭性与相关性
+
+**维数（Dimension）**
+
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200921134916037.png" alt="image-20200921134916037" style="zoom:50%;" />
+
+平行子空间的维数=最多的线性无关向量的个数
+
+**范数的定义**
+
+范数是一种长度的推广
 
 
+
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200921135128222.png" alt="image-20200921135128222" style="zoom:60%;" />
+
+曼哈顿距离：1-范数
+
+欧几里得距离：2-范数
+
+**极限点与聚点**
+
+极限点：一个数列$\left\{x_n\right\}$收敛到$x^*$
+
+聚点：数列中的点聚集在一个点的附近
+
+集合S的闭包$clS$是含于该集合的点列聚点的集合，即其所有极限点的集合
+
+**几个“相对”概念**
+
+设$x\in S,N_\epsilon(x)$表示$x$的邻域，对于某个$\epsilon>0$
+
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200921140248794.png" alt="image-20200921140248794" style="zoom:50%;" />
+
+**性质**
+
+凸集的闭包和内部都是凸集
+
+**仿射无关**
+
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200921141148684.png" alt="image-20200921141148684" style="zoom:50%;" />
+
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200923195947626.png" alt="image-20200923195947626" style="zoom:50%;" />
+
+我们可以用反正证明2，3等价：
+
+假设存在$k_0,...,k_m$使得：$k_0(x^0,1)^T+...+k_m(x^m,1)^T=0\Longrightarrow k_0=-(k_1+...+k_m)\\k_0x^0+...+k_mx^m=k_1(x^1-x^0)+...+k_m(x^m-x^0)=0$
+
+与$x^1-x^0,...,x^m-x^0$线性无关矛盾
+
+那么，任意一个向量$(x,1)^T$可以用$(x^0,1)^T,...,(x^m,1)^T$表示，即：
+
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200923200446533.png" alt="image-20200923200446533" style="zoom: 40%;" />
+
+**也就是说：m+1个向量的凸组合相当于m个向量的线性组合**
 

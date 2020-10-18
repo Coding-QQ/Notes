@@ -6,7 +6,9 @@
 
 <img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20200927135859059.png" alt="image-20200927135859059" style="zoom:50%;" />
 
-$S_i^k$是在上一步的策略中，选择了不劣于上上步的所有策略收益的那些策略
+$S_i^k$是在上一步的策略中，选择了不劣于上步的所有策略收益的那些策略
+
+(也就是剔除上一步的dominated策略)
 
 **Mixed Strategy**
 

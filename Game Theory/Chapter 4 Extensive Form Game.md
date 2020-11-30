@@ -99,7 +99,7 @@ Cournot模型：
 
 ### Pure Strategy 在动态博弈中的定义
 
-<img src="C:/Users/liuqq/AppData/Roaming/Typora/typora-user-images/image-20201016134929097.png" alt="image-20201016134929097" style="zoom:33%;" />
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20201016134929097.png" alt="image-20201016134929097" style="zoom:33%;" />
 
 **Pure Strategy纳什均衡**
 
@@ -134,7 +134,7 @@ player 1共有两个信息集，所以player 1的所有策略集合有$(a,c),(a,
 
 例子：
 
-<img src="C:/Users/liuqq/AppData/Roaming/Typora/typora-user-images/image-20201016142401141.png" alt="image-20201016142401141" style="zoom:33%;" />
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20201016145559986.png" alt="image-20201016142401141" style="zoom:33%;" />
 
 * B共有$2\times2=4$个pure strategy
 * $b_2$是一个behavior strategy
@@ -151,5 +151,5 @@ player 1共有两个信息集，所以player 1的所有策略集合有$(a,c),(a,
 
 **Subgame Perfect Equilibrium**
 
-<img src="C:/Users/liuqq/AppData/Roaming/Typora/typora-user-images/image-20201016145559986.png" alt="image-20201016145559986" style="zoom:33%;" />
+<img src="http://lqqnotes.oss-cn-beijing.aliyuncs.com/img/image-20201016142401141.png" alt="image-20201016145559986" style="zoom:33%;" />
 
